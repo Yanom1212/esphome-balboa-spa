@@ -37,8 +37,10 @@ class BalboaSpa : public uart::UARTDevice, public PollingComponent {
     void set_hour(int hour);
     void set_minute(int minute);
     void toggle_light();
+    void toggle_blower();
     void toggle_jet1() ;
     void toggle_jet2();
+    void toggle_jet3();
 
     void register_listener(const std::function<void(SpaState*)> &func) {this->listeners_.push_back(func);}
 
