@@ -66,12 +66,19 @@ void BalboaSpa::toggle_light() {
     send = 0x11;
 }
 
+void BalboaSpa::toggle_blower() {
+    send = 0x0C;
+}
 void BalboaSpa::toggle_jet1() {
     send = 0x04;
 }
 
 void BalboaSpa::toggle_jet2() {
     send = 0x05;
+}
+
+void BalboaSpa::toggle_jet3() {
+    send = 0x06;
 }
 
 void BalboaSpa::read_serial() {
